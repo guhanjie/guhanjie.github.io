@@ -319,18 +319,18 @@ em, var {
 	top: 30%;
 	left: 50%;
 	margin-left: -5.45rem;
-	-webkit-animation: blink_shaking 2s ease-in-out 0s infinite alternate both;
-	-moz-animation: blink_shaking 2s ease-in-out 0s infinite alternate both;
-	animation: blink_shaking 2s ease-in-out 0s infinite alternate both
+	-webkit-animation: blink_shaking 2s ease-in-out 2s infinite alternate both;
+	-moz-animation: blink_shaking 2s ease-in-out 2s infinite alternate both;
+	animation: blink_shaking 2s ease-in-out 2s infinite alternate both
 }
 .swiper-slide-active .p3_img5 {
 	position: absolute;
 	top: 38%;
 	left: 50%;
 	margin-left: -4.7375rem;
-	-webkit-animation: blink_shaking 2s ease-in-out 2s infinite alternate both;
-	-moz-animation: blink_shaking 2s ease-in-out 2s infinite alternate both;
-	animation: blink_shaking 2s ease-in-out 2s infinite alternate both
+	-webkit-animation: blink_shaking 2s ease-in-out 0s infinite alternate both;
+	-moz-animation: blink_shaking 2s ease-in-out 0s infinite alternate both;
+	animation: blink_shaking 2s ease-in-out 0s infinite alternate both
 }
 .swiper-slide-active .p3_img6 {
 	position: absolute;
@@ -376,18 +376,18 @@ em, var {
 	top: 36%;
 	left: 50%;
 	margin-left: -4.325rem;
-	-webkit-animation: blink 2s ease-in-out 0s infinite alternate both;
-	-moz-animation: blink 2s ease-in-out 0s infinite alternate both;
-	animation: blink 2s ease-in-out 0s infinite alternate both
+	-webkit-animation: blink 2s ease-in-out 2s infinite alternate both;
+	-moz-animation: blink 2s ease-in-out 2s infinite alternate both;
+	animation: blink 2s ease-in-out 2s infinite alternate both
 }
 .swiper-slide-active .p4_img5 {
 	position: absolute;
 	top: 34%;
 	left: 50%;
 	margin-left: -3.8625rem;
-	-webkit-animation: blink 2s ease-in-out 2s infinite alternate both;
-	-moz-animation: blink 2s ease-in-out 2s infinite alternate both;
-	animation: blink 2s ease-in-out 2s infinite alternate both
+	-webkit-animation: blink 2s ease-in-out 0s infinite alternate both;
+	-moz-animation: blink 2s ease-in-out 0s infinite alternate both;
+	animation: blink 2s ease-in-out 0s infinite alternate both
 }
 .swiper-slide-active .p4_img6 {
 	position: absolute;
