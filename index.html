@@ -29,7 +29,7 @@
 <!-- loading -->
 <div class="loading_out" id="loading_out" style="display:none;">
     <div class="loading">
-        <img src="loading_logo.png" width="100" height="100"/>
+        <img src="img/loading.gif" width="100" height="100"/>
 
         <div class="loading_c">
             <span style="width:0%;"></span>
@@ -48,8 +48,8 @@
     <div class="swiper-slide page1" style="background:#E74049;">    	
         <img class="p1_img1" src="img/p1_img1.png" style="width:3.575rem;height:3.55rem;">
         <img class="p1_img2" src="img/p1_img2.png" style="width:5.9rem;height:7.2rem;">
-        <img class="p1_img2-2" src="img/p1_img2-2.png" style="width:0.25rem;height:0.4rem;">
-        <img class="p1_img2-3" src="img/p1_img2-2.png" style="width:0.25rem;height:0.4rem;">
+        <img class="p1_img2-2" src="img/p1_img2-2.png" style="width:0.5rem;height:0.5rem;">
+        <img class="p1_img2-3" src="img/p1_img2-2.png" style="width:0.5rem;height:0.5rem;">
         <img class="p1_img3" src="img/p1_img3.png" style="width:15.425rem;height:8.7rem;">
         <img class="p1_img4" src="img/p1_img4.png" style="width:15.425rem;height:8.7rem;">
         <img class="p1_img4-2" src="img/p1_img3.png" style="width:15.425rem;height:8.7rem;">
@@ -123,6 +123,13 @@
 </div>
 <!-- /Swiper -->
 
+<audio id="bgAudio" src="audio/guaguagua.mp3" autoplay loop></audio>
+<audio id="audio-2-1" src="audio/2-1击剑.mp3"></audio>
+<audio id="audio-2-2" src="audio/2-2惨叫.mp3"></audio>
+<audio id="audio-3" src="audio/3抓狂.mp3"></audio>
+<audio id="audio-4" src="audio/4犯晕.mp3"></audio>
+<audio id="audio-5" src="audio/5死神来了.mp3"></audio>
+
 <!-- music -->
 <a href="javascript:void(0);" class="music rotate" style="display:none;"></a>
 <!-- /music -->
@@ -148,9 +155,39 @@
       doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);    
     $(document).ready(function(){
-        var animationEl = $(".swiper-slide-active .p1_img5");
-        animationEl.bind("webkitAnimationEnd", function() {
-            animationEl.addClass("finished");
+        var $4GlogoEl = $(".swiper-slide .p1_img5");
+        $4GlogoEl.bind("webkitAnimationEnd", function() {
+            $4GlogoEl.addClass("finished");
+        });
+        $(".swiper-slide").on("webkitAnimationStart", ".p2_img4", function() {
+            setTimeout("$('#audio-2-1')[0].play();",500); //播放声音 
+        });
+        $(".swiper-slide").on("animationstart", ".p2_img4", function() {
+            setTimeout("$('#audio-2-1')[0].play();",500); //播放声音 
+        });
+        $(".swiper-slide").on("webkitAnimationStart", ".p2_img5", function() {
+            setTimeout("$('#audio-2-2')[0].play();",800); //播放声音 
+        });
+        $(".swiper-slide").on("animationstart", ".p2_img5", function() {
+            setTimeout("$('#audio-2-2')[0].play();",800); //播放声音 
+        });
+        $(".swiper-slide").on("webkitAnimationStart", ".p3_img4", function() {
+            setTimeout("$('#audio-3')[0].play();",1500); //播放声音 
+        });
+        $(".swiper-slide").on("animationstart", ".p3_img4", function() {
+            setTimeout("$('#audio-3')[0].play();",1500); //播放声音 
+        });
+        $(".swiper-slide").on("webkitAnimationStart", ".p4_img4", function() {
+            setTimeout("$('#audio-4')[0].play();",1000); //播放声音 
+        });
+        $(".swiper-slide").on("animationstart", ".p4_img4", function() {
+            setTimeout("$('#audio-4')[0].play();",1000); //播放声音 
+        });
+        $(".swiper-slide").on("webkitAnimationStart", ".p5_img5", function() {
+            $('#audio-5')[0].play(); //播放声音 
+        });
+        $(".swiper-slide").on("animationstart", ".p5_img5", function() {
+            $('#audio-5')[0].play(); //播放声音 
         });
     });
 </script>
