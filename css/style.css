@@ -233,18 +233,18 @@ em, var {
 	top: 5%;
 	left: 50%;
 	margin-left: -6.1625rem;
-	-webkit-animation: fadeInTop 2s ease 0.3s both;
-	-moz-animation: fadeInTop 2s ease 0.3 both;
-	animation: fadeInTop 2s ease 0.3s both;
+	-webkit-animation: fadeInLeft 0.5s ease 0.3s both;
+	-moz-animation: fadeInLeft 0.5s ease 0.3 both;
+	animation: fadeInLeft 0.5s ease 0.3s both;
 }
 .swiper-slide-active .p2_img2 {
 	position: absolute;
 	top: 17%;
 	left: 50%;
 	margin-left: -6.875rem;
-	-webkit-animation: fadeIn 2s ease 0.7s both;
-	-moz-animation: fadeIn 2s ease 0.7s both;
-	animation: fadeIn 2s ease 0.7s both;
+	-webkit-animation: scaleInRight 0.5s ease 0.3s both;
+	-moz-animation: scaleInRight 0.5s ease 0.3s both;
+	animation: scaleInRight 0.5s ease 0.3s both;
 	z-index: 1
 }
 .swiper-slide-active .p2_img3 {
@@ -252,9 +252,9 @@ em, var {
 	top: 19%;
 	left: 50%;
 	margin-left: -6.2125rem;
-	-webkit-animation: fadeIn 0.8s linear 1.5s infinite both;
-	-moz-animation: fadeIn 0.8s linear 1.5s infinite both;
-	animation: fadeIn 0.8s linear 1.5s infinite both;
+	-webkit-animation: fadeIn 0.7s linear 1s infinite both;
+	-moz-animation: fadeIn 0.7s linear 1s infinite both;
+	animation: fadeIn 0.7s linear 1s infinite both;
 	z-index: 2
 }
 .swiper-slide-active .p2_img4 {
@@ -290,18 +290,18 @@ em, var {
 	top: 5%;
 	left: 50%;
 	margin-left: -6.2125rem;
-	-webkit-animation: fadeInTop 2s ease 0.3s both;
-	-moz-animation: fadeInTop 2s ease 0.3 both;
-	animation: fadeInTop 2s ease 0.3s both;
+	-webkit-animation: fadeInRight 0.5s ease 0.3s both;
+	-moz-animation: fadeInRight 0.5s ease 0.3 both;
+	animation: fadeInRight 0.5s ease 0.3s both;
 }
 .swiper-slide-active .p3_img2 {
 	position: absolute;
 	top: 17%;
 	left: 50%;
 	margin-left: -6.875rem;
-	-webkit-animation: fadeIn 2s ease 0.7s both;
-	-moz-animation: fadeIn 2s ease 0.7s both;
-	animation: fadeIn 2s ease 0.7s both;
+	-webkit-animation: fadeInLeft 0.5s ease 0.3s both;
+	-moz-animation: fadeInLeft 0.5s ease 0.3s both;
+	animation: fadeInLeft 0.5s ease 0.3s both;
 	z-index: 1
 }
 .swiper-slide-active .p3_img3 {
@@ -309,9 +309,9 @@ em, var {
 	top: 19%;
 	left: 50%;
 	margin-left: -4.9rem;
-	-webkit-animation: fadeIn 0.8s linear 1.5s infinite both;
-	-moz-animation: fadeIn 0.8s linear 1.5s infinite both;
-	animation: fadeIn 0.8s linear 1.5s infinite both;
+	-webkit-animation: fadeIn 0.7s linear 1s infinite both;
+	-moz-animation: fadeIn 0.7s linear 1s infinite both;
+	animation: fadeIn 0.7s linear 1s infinite both;
 	z-index: 2
 }
 .swiper-slide-active .p3_img4 {
@@ -347,18 +347,18 @@ em, var {
 	top: 5%;
 	left: 50%;
 	margin-left: -6.225rem;
-	-webkit-animation: fadeInTop 2s ease 0.3s both;
-	-moz-animation: fadeInTop 2s ease 0.3 both;
-	animation: fadeInTop 2s ease 0.3s both;
+	-webkit-animation: fadeInLeft 0.5s ease 0.3s both;
+	-moz-animation: fadeInLeft 0.5s ease 0.3 both;
+	animation: fadeInLeft 0.5s ease 0.3s both;
 }
 .swiper-slide-active .p4_img2 {
 	position: absolute;
 	top: 17%;
 	left: 50%;
 	margin-left: -6.875rem;
-	-webkit-animation: fadeIn 2s ease 0.7s both;
-	-moz-animation: fadeIn 2s ease 0.7s both;
-	animation: fadeIn 2s ease 0.7s both;
+	-webkit-animation: fadeInRight 0.5s ease 0.3s both;
+	-moz-animation: fadeInRight 0.5s ease 0.3s both;
+	animation: fadeInRight 0.5s ease 0.3s both;
 	z-index: 1
 }
 .swiper-slide-active .p4_img3 {
@@ -366,9 +366,9 @@ em, var {
 	top: 19%;
 	left: 50%;
 	margin-left: -6.5375rem;
-	-webkit-animation: fadeIn 0.8s linear 1.5s infinite both;
-	-moz-animation: fadeIn 0.8s linear 1.5s infinite both;
-	animation: fadeIn 0.8s linear 1.5s infinite both;
+	-webkit-animation: fadeIn 0.7s linear 1s infinite both;
+	-moz-animation: fadeIn 0.7s linear 1s infinite both;
+	animation: fadeIn 0.7s linear 1s infinite both;
 	z-index: 2
 }
 .swiper-slide-active .p4_img4 {
@@ -404,18 +404,18 @@ em, var {
 	top: 5%;
 	left: 50%;
 	margin-left: -6.7875rem;
-	-webkit-animation: fadeInTop 2s ease 0.3s both;
-	-moz-animation: fadeInTop 2s ease 0.3 both;
-	animation: fadeInTop 2s ease 0.3s both;
+	-webkit-animation: fadeInRight 0.5s ease 0.3s both;
+	-moz-animation: fadeInRight 0.5s ease 0.3 both;
+	animation: fadeInRight 0.5s ease 0.3s both;
 }
 .swiper-slide-active .p5_img2 {
 	position: absolute;
 	top: 16%;
 	left: 50%;
 	margin-left: -6.875rem;
-	-webkit-animation: fadeIn 2s ease 0.7s both;
-	-moz-animation: fadeIn 2s ease 0.7s both;
-	animation: fadeIn 2s ease 0.7s both;
+	-webkit-animation: fadeInLeft 0.5s ease 0.3s both;
+	-moz-animation: fadeInLeft 0.5s ease 0.3s both;
+	animation: fadeInLeft 0.5s ease 0.3s both;
 	z-index: 1
 }
 .swiper-slide-active .p5_img3 {
@@ -423,9 +423,9 @@ em, var {
 	top: 18%;
 	left: 50%;
 	margin-left: -6.5625rem;
-	-webkit-animation: fadeIn 0.8s linear 1.5s infinite both;
-	-moz-animation: fadeIn 0.8s linear 1.5s infinite both;
-	animation: fadeIn 0.8s linear 1.5s infinite both;
+	-webkit-animation: fadeIn 0.7s linear 1s infinite both;
+	-moz-animation: fadeIn 0.7s linear 1s infinite both;
+	animation: fadeIn 0.7s linear 1s infinite both;
 	z-index: 2
 }
 .swiper-slide-active .p5_img4 {
@@ -439,11 +439,11 @@ em, var {
 }
 .swiper-slide-active .p5_img4-2 {
 	position: absolute;
-	top: 40%;
+	top: 38%;
 	right: 10%;
-    -webkit-animation: fadeInRight 4s ease-in-out 0s infinite alternate both;
-	-moz-animation: fadeInRight 4s ease-in-out 0s infinite alternate both;
-	animation: fadeInRight 4s ease-in-out 0s infinite alternate both
+    -webkit-animation: blink_shaking 4s ease-in-out 0s infinite alternate both;
+	-moz-animation: blink_shaking 4s ease-in-out 0s infinite alternate both;
+	animation: blink_shaking 4s ease-in-out 0s infinite alternate both
 }
 .swiper-slide-active .p5_img5 {
 	position: absolute;
