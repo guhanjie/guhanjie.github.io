@@ -467,17 +467,17 @@ em, var {
 	position: absolute;
 	top: 25%;
 	left: 50%;
-	margin-left: -6.45rem;
-	-webkit-animation: blink 0.5s ease-in-out 0.5s infinite alternate both;
-	-moz-animation: blink 0.5s ease-in-out 0.5s infinite alternate both;
-	animation: blink 0.5s ease-in-out 0.5s infinite alternate both;
+	margin-left: -6.2375rem;
+	-webkit-animation: fadeIn 0.5s ease-in-out 0.5s alternate both;
+	-moz-animation: fadeIn 0.5s ease-in-out 0.5s alternate both;
+	animation: fadeIn 0.5s ease-in-out 0.5s alternate both;
 }
 .swiper-slide-active .p6_img2 {
 	position: absolute;
-	top: 25%;
+	top: 40%;
 	left: 50%;
-	margin-left: -6.45rem;
-	-webkit-animation: blink 0.5s ease-in-out 1s infinite alternate both;
+	margin-left: -3.75rem;
+	-webkit-animation: beat 0.5s ease-in-out 1s infinite alternate both;
 	-moz-animation: blink 0.5s ease-in-out 1s infinite alternate both;
 	animation: blink 0.5s ease-in-out 1s infinite alternate both;
 }
@@ -909,21 +909,21 @@ em, var {
 	}
 }
 @-webkit-keyframes beat {
-    0% {-webkit-transform: scale(1)}
+    0% {opacity: 0; -webkit-transform: scale(1)}
     15% {-webkit-transform: scale(1.2)}
     30% {-webkit-transform: scale(1)}
     55% {-webkit-transform: scale(1.1)}
     100% {-webkit-transform: scale(1)} 
 }
 @-moz-keyframes beat {
-    0% {-moz-transform: scale(1)}
+    0% {opacity: 0; -moz-transform: scale(1)}
     15% {-moz-transform: scale(1.2)}
     30% {-moz-transform: scale(1)}
     55% {-moz-transform: scale(1.1)}
     100% {-moz-transform: scale(1)} 
 }
 @keyframes beat {
-    0% {transform: scale(1)}
+    0% {opacity: 0; transform: scale(1)}
     15% {transform: scale(1.2)}
     30% {transform: scale(1)}
     55% {transform: scale(1.1)}
