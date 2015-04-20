@@ -34,7 +34,7 @@ body {
 	-webkit-box-orient: vertical;
 	-webkit-box-align: stretch;
 	position: relative;
-	background: #4B96DA
+	background: #015488
 }
 img {
 	border: 0;
@@ -462,6 +462,44 @@ em, var {
 	-webkit-animation: fadeInBottom 1s ease 0.7s both;
 	-moz-animation: fadeInBottom 1s ease 0.7s both;
 	animation: fadeInBottom 1s ease 0.7s both
+}
+.swiper-slide-active .p6_img1 {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -6.45rem;
+	-webkit-animation: blink 0.5s ease-in-out 0.5s infinite alternate both;
+	-moz-animation: blink 0.5s ease-in-out 0.5s infinite alternate both;
+	animation: blink 0.5s ease-in-out 0.5s infinite alternate both;
+}
+.swiper-slide-active .p6_img2 {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -6.45rem;
+	-webkit-animation: blink 0.5s ease-in-out 1s infinite alternate both;
+	-moz-animation: blink 0.5s ease-in-out 1s infinite alternate both;
+	animation: blink 0.5s ease-in-out 1s infinite alternate both;
+}
+.swiper-slide-active .p6_img3 {
+	position: absolute;
+	bottom: 28%;
+	left: 50%;
+	margin-left: -3.55rem;
+	-webkit-animation: fadeIn 0.5s ease-in-out 0.5s infinite alternate both;
+	-moz-animation: fadeIn 0.5s linear 0.5s infinite both;
+	animation: fadeIn 0.5s linear 0.5s infinite both;
+	z-index: 2
+}
+.swiper-slide-active .p6_img4 {
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
+	margin-left: -6.875rem;
+	-webkit-animation: fadeInRight 0.5s ease 0.3s both;
+	-moz-animation: fadeInRight 0.5s ease 0.3s both;
+	animation: fadeInRight 0.5s ease 0.3s both;
+	z-index: 1
 }
 
 @-webkit-keyframes start {
