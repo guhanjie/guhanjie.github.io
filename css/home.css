@@ -79,6 +79,18 @@ ul {
     z-index: 5;
     background-image: url('../images/01-04红色按钮.png');
 }
+.item1 .part5.btn_pushed{
+    top: 20px;
+}
+.item1 .start_btn {
+    z-index: 6;
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    left: 50%;
+    margin-left: -15%;
+    top: 85%;
+}
 .item2 .part1 {
     z-index: 1;
     background-image: url('../images/02-02明信片.png');
@@ -186,6 +198,14 @@ ul {
 .item10 .part2 {
     z-index: 2;
     background-image: url('../images/10-02分享好友再看一遍.png');
+}
+.item10 .goback {  
+    z-index: 6;
+    position: absolute;
+    width: 35%;
+    height: 12%;
+    left: 50%;
+    top: 76%;
 }
 .c_arrow {
     display: block;

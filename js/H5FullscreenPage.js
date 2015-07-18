@@ -8,7 +8,7 @@
                 'callback' : function(){alert('hey')}
             },
             'useParallax' : true,
-            'useArrow' : true,
+            'useArrow' : false,
             'useAnimation' : true,
             'useMusic' : {
                 'autoPlay' : true,
@@ -21,7 +21,9 @@
                 $.extend(opt,option);
                 initDom(opt);
                 initEvent(opt);
-            }
+            },
+            'nextSlide' : nextSlide,
+            'prevSlide' : prevSlide
          };
          
          var obj = {
@@ -237,6 +239,12 @@
          function nextSlide(item){
             //$(event.target).removeClass('parallax-item');
             //恢复到原样，或者展示下一item
+            if(item.is('.item1')) {
+                if(!item.hasClass('aggreed')) {
+                    obj[opt.type].showSlide(item);
+                    return;
+                }
+            }
             if (item.next().length) { 
                 item.attr('state','prev');
                 item.siblings('.item').removeAttr('state');
@@ -363,7 +371,7 @@
                         }, false);  
                     }
             }
-            $('.music').on('tap',function(){
+            $('.music').on('tap, touchend',function(){
                 $(this).toggleClass('play');
                 var audio = document.getElementById('audio');
                 if (audio.paused) {
