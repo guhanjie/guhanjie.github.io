@@ -19,34 +19,37 @@ ul {
     background-size: 100% 100%;
 }
 .item1 {
-    background-image: url('../images/01-01背景.png');
+    background-image: url('../images/01-01背景.jpg');
 }
 .item2 {
-    background-image: url('../images/02-01背景.png');
+    background-image: url('../images/02-01背景.jpg');
 }
 .item3 {
-    background-image: url('../images/03-01背景.png');
+    background-image: url('../images/03-01背景.jpg');
 }
 .item4 {
-    background-image: url('../images/04-01背景.png');
+    background-image: url('../images/04-01背景.jpg');
 }
 .item5 {
-    background-image: url('../images/05-01背景.png');
+    background-image: url('../images/05-01背景.jpg');
 }
 .item6 {
-    background-image: url('../images/06-01背景.png');
+    background-image: url('../images/06-01背景.jpg');
 }
 .item7 {
-    background-image: url('../images/07-01背景.png');
+    background-image: url('../images/07-01背景.jpg');
 }
 .item8 {
-    background-image: url('../images/08-01背景.png');
+    background-image: url('../images/08-01背景.jpg');
 }
 .item9 {
-    background-image: url('../images/09-01背景.png');
+    background-image: url('../images/09-01背景.jpg');
 }
 .item10 {
-    background-image: url('../images/10-01背景.png');
+    background-image: url('../images/10-01背景.jpg');
+}
+.item11 {
+    background-image: url('../images/11-01背景.jpg');
 }
 
 .item .part {
@@ -101,7 +104,7 @@ ul {
 }
 .item2 .part3 {
     z-index: 3;
-    background-image: url('../images/02-04箭头.png');
+    background-image: url('../images/02-03箭头.png');
 }
 .item3 .part1 {
     z-index: 1;
@@ -193,19 +196,40 @@ ul {
 }
 .item10 .part1 {
     z-index: 1;
-    background-image: url('../images/10-03LOGO集合.png');
+    background-image: url('../images/10-02文字.png');
 }
 .item10 .part2 {
     z-index: 2;
-    background-image: url('../images/10-02分享好友再看一遍.png');
+    background-image: url('../images/07-04白箭头.png');
 }
-.item10 .goback {  
+.item11 .part1 {
+    z-index: 1;
+    background-image: url('../images/11-03LOGO集合.png');
+}
+.item11 .part2 {
+    z-index: 2;
+    background-image: url('../images/11-02分享好友再看一遍.png');
+}
+.item11 .part3 {
+    z-index: -1;
+    display: none;
+    background-image: url('../images/11-04分享层.png');
+}
+.item .doshare {  
+    z-index: 6;
+    position: absolute;
+    width: 20%;
+    height: 12%;
+    left: 18%;
+    top: 75%;
+}
+.item .goback {  
     z-index: 6;
     position: absolute;
     width: 35%;
     height: 12%;
     left: 50%;
-    top: 76%;
+    top: 75%;
 }
 .c_arrow {
     display: block;
@@ -216,4 +240,7 @@ ul {
     -webkit-tap-highlight-color: rgba(255,255,255,0);
     animation: fadeInDown 1.5s .2s ease infinite;
     -webkit-animation: fadeInDown 1.5s .2s infinite;
+}
+.item[state] {
+    box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0,0,0,0.15);
 }

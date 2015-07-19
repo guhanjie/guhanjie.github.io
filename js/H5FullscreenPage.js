@@ -13,7 +13,7 @@
             'useMusic' : {
                 'autoPlay' : true,
                 'loopPlay' : true,
-                'src' : 'http://mat1.gtimg.com/news/2015/love/FadeAway.mp3'
+                'src' : 'audios/The-Three-Trails.mp3'
             }
          };
          window.H5FullscreenPage = {

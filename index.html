@@ -16,7 +16,7 @@
 <body class="H5FullscreenPage">
     <div class="H5FullscreenPage-wrap">
         <div class="item item1">
-            <div class="part part1"></div>
+            <!-- <div class="part part1"></div> -->
             <div class="part part2"></div>
             <div class="part part3 blink"></div>
             <div class="part part4"></div>
@@ -24,8 +24,8 @@
             <div class="part start_btn"></div>            
         </div>
         <div class="item item2">
-            <div class="part part1 rotateIn"></div>
-            <div class="part part2 rollInRight" data-delay="500"></div>
+            <!-- <div class="part part1 rotateIn"></div> -->
+            <div class="part part2 rollInRight"></div>
             <div class="part part3 c_arrow fadeIn"></div>
         </div>
         <div class="item item3">
@@ -36,22 +36,22 @@
         <div class="item item4">
             <div class="part part1 zoomIn"></div>
             <div class="part part2 heartBeat" data-delay="500"></div>
-            <div class="part part3 rollInLeft" data-delay="300"></div>
+            <div class="part part3 rollInLeft"></div>
             <div class="part part4 c_arrow slideDown"></div>
         </div>
         <div class="item item5">
-            <div class="part part1 rollInRight"></div>
+            <div class="part part1 slideRight"></div>
             <div class="part part2 fadeIn"></div>
             <div class="part part3 c_arrow slideDown"></div>
         </div>
         <div class="item item6">
             <div class="part part1 fadeIn"></div>
-            <div class="part part2 rollInRight" data-delay="500"></div>
+            <div class="part part2 rollInRight"></div>
             <div class="part part3 c_arrow slideDown"></div>
         </div>
         <div class="item item7">
-            <div class="part part1 rollInLeft"></div>
-            <div class="part part2 rollInRight" data-delay="500"></div>
+            <div class="part part1 slideLeft"></div>
+            <div class="part part2 rollInRight"></div>
             <div class="part part3 c_arrow slideDown"></div>
         </div>
         <div class="item item8">
@@ -65,8 +65,14 @@
             <div class="part part3 c_arrow slideDown"></div>
         </div>
         <div class="item item10">
-            <div class="part part1 rollInRight"></div>
-            <div class="part part2 rollInLeft"></div>
+            <div class="part part1 fadeIn"></div>
+            <div class="part part2 c_arrow slideDown"></div>
+        </div>
+        <div class="item item11">
+            <div class="part part1 slideRight"></div>
+            <div class="part part2 slideLeft"></div>
+            <div class="part part3 share"></div>
+            <div class="part doshare"></div>
             <div class="part goback"></div>
         </div>
     </div>
@@ -74,7 +80,7 @@
 	<script type="text/javascript" src="js/H5FullscreenPage.js"></script>
 	
     <script type="text/javascript">
-		H5FullscreenPage.init({'type':3,
+		H5FullscreenPage.init({'type':1,
             'pageShow' : function(dom){
 			
              },
@@ -88,13 +94,25 @@
             setTimeout("H5FullscreenPage.nextSlide($('.item1'));$('.item1 .part5').removeClass('btn_pushed');$('.item1').removeClass('aggreed');", 500);            
             return false;
         });
-        $('.item10 .goback').on('tap, touchend', function(){
-            var item = $('.item10');
+        $('.item .goback').on('tap, touchend', function(){
+            var item = $(this).parent('.item');
             while(item.prev().length) {
                 H5FullscreenPage.prevSlide($(item));
                 item = item.prev();
             }            
             return false;
+        });
+        $('.item .doshare').on('tap, touchend', function(){
+            var share = $(this).siblings('.share');
+            share.css('display', 'block');
+            share.css('z-index', '9');
+            return false;
+        });
+        $('.item .share').on('tap, touchend', function(){
+            if($(this).css('display') === 'block') {
+                $(this).css('display', 'none');                
+                $(this).css('z-index', '-1');
+            }
         });
     </script>
 </body>
