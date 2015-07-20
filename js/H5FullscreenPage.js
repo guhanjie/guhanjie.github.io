@@ -113,20 +113,48 @@
                  },
                  'nextSlide' : function(item){
                      item.addClass('zindex');
-                     setTimeout(function(){
-                         item.removeClass('no-animation').css('-webkit-transform', 'translate3d(0,-100%,0)');
-                         item.next().removeClass('zindex').addClass('no-animation').css('-webkit-transform', 'translate3d(0,0,0)');
-                     },100);
-                     
+                     item.removeClass('no-animation').css('-webkit-transform', 'translate3d(0,-100%,0)');
+                     item.next().removeClass('zindex').addClass('no-animation').css('-webkit-transform', 'translate3d(0,0,0)');                 
                  },
-                 'prevSlide' : function(item){
-                     
+                 'prevSlide' : function(item){                     
                      item.prev().css('-webkit-transform', 'translate3d(0,0,0)'); 
                      item.next().css('-webkit-transform', 'translate3d(0,100%,0)'); 
                      item.removeClass('zindex');
                  },
                  'showSlide' : function(item){
                      item.css('-webkit-transform', 'scale(1)'); 
+                     item.next().css('-webkit-transform', 'translate3d(0,100%,0)'); 
+                 }
+             },
+             '5' : {
+                 'upDrag' : function(percentage, item){
+                     var translateY = 1 - 0.4*percentage;//位置系数，可以微调
+                     //item.css('-webkit-transform', 'translate3d(0,'+(translateY*100 - 100)+'%,0)');
+                     item.removeClass('zindex');
+                     item.next().addClass('zindex');
+                     item.next().css('-webkit-transform', 'translate3d(0,'+translateY*100+'%,0)'); //下一个item上移动
+                 },
+                 'downDrag' : function(percentage, item){
+                     var translateY = -(0.4*percentage);
+                     item.removeClass('zindex');
+                     item.prev().addClass('zindex');               
+                     item.next().css('-webkit-transform', 'translate3d(0,100%,0)');
+                     item.prev().css('-webkit-transform', 'translate3d(0,'+(translateY*100 - 100)+'%,0)');
+                     //item.css('-webkit-transform', 'translate3d(0,'+translateY*100+'%,0)');//当前item下移动
+                 },
+                 'nextSlide' : function(item){
+                     setTimeout(function(){
+                         item.next().css('-webkit-transform', 'translate3d(0,0,0)');
+                     },100);                     
+                 },
+                 'prevSlide' : function(item){  
+                     setTimeout(function(){    
+                         item.prev().css('-webkit-transform', 'translate3d(0,0,0)');  
+                     },100);       
+
+                 },
+                 'showSlide' : function(item){
+                     item.css('-webkit-transform', 'translate3d(0,0,0)'); 
                      item.next().css('-webkit-transform', 'translate3d(0,100%,0)'); 
                  }
              }
@@ -240,6 +268,8 @@
             //$(event.target).removeClass('parallax-item');
             //恢复到原样，或者展示下一item
             if(item.is('.item1')) {
+                item.addClass('zindex');
+                item.next().addClass('zindex');
                 if(!item.hasClass('aggreed')) {
                     obj[opt.type].showSlide(item);
                     return;
@@ -276,6 +306,7 @@
          function showSlide(item){
             //$(event.target).removeClass('parallax-item');
              obj[opt.type].showSlide(item);
+             $('.overlay').hide();
          }
          function initDom(opt){
             $('body').addClass('H5FullscreenPage');
@@ -384,8 +415,8 @@
             $(document).on('touchmove', function(e){
                 e.preventDefault();
             });
-            if (opt.type > 4) {
-                opt.type = opt.type - 4;
+            if (opt.type > 5) {
+                opt.type = opt.type - 5;
                 $('.item').on({
                     'swipeUp': swipeUp,
                     'swipeDown': swipeDown
@@ -415,7 +446,7 @@
                // opt.pageComplete(event.target);
                // debugger;
             });
-            $('.overlay').on('tap', function(){
+            $('.overlay').on('tap touchend', function(){
                 //覆盖层隐藏
                 $('.overlay').hide();
             });
