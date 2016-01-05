@@ -13,7 +13,7 @@
             'useMusic' : {
                 'autoPlay' : true,
                 'loopPlay' : true,
-                'src' : 'audios/The-Three-Trails.mp3'
+                'src' : 'audios/FadeAway.mp3'
             }
          };
          window.H5FullscreenPage = {
